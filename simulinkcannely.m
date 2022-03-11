@@ -7,7 +7,7 @@ signal=linspace(-10,10,step);
 
 dn=[];
 G_TM=[];
-%%%%%
+
 
 n= 1.1e24;
 dn=[];
