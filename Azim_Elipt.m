@@ -22,8 +22,8 @@ dz=Length(deZ)-lold;
              M= 0.5* MulerMatrix;
          S_prim2=M*S2';
           S_prim1=M*S1';
-            azimuth2(deZ-1)=(((S_prim2(3)*cos(Delta_Phi(deZ-1)))+(S_prim2(4)*sin(Delta_Phi(deZ-1))) )/S_prim2(2));
-     ellipticity2(deZ-1)=(((-S_prim2(3)*sin(Delta_Phi(deZ-1)))+(S_prim2(4)*cos(Delta_Phi(deZ-1))) )/S_prim2(1));
+            azimuth2(deZ-1)=rad2deg(((S_prim2(3)*cos(Delta_Phi(deZ-1)))+(S_prim2(4)*sin(Delta_Phi(deZ-1))) )/S_prim2(2));
+     ellipticity2(deZ-1)=rad2deg(((-S_prim2(3)*sin(Delta_Phi(deZ-1)))+(S_prim2(4)*cos(Delta_Phi(deZ-1))) )/S_prim2(1));
       azimuth1(deZ-1)=rad2deg((S_prim1(3)*cos(Delta_Phi(deZ-1)))+(S_prim1(4)*sin(Delta_Phi(deZ-1))) )/S_prim1(2);
      ellipticity1(deZ-1)=rad2deg((-S_prim1(3)*sin(Delta_Phi(deZ-1)))+(S_prim1(4)*cos(Delta_Phi(deZ-1))) )/S_prim1(1);
           end
